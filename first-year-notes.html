@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Student Notes</title>
+    <title>1st Year Notes</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/d2234e57e5.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
-    <meta property="og:title" content="Free Student Notes">
-    <meta property="og:description" content="Access study notes for Applied Physics, Matrices, and Calculus.">
-    <meta property="og:url" content="https://24h51a66f4.github.io/cmrnotix/index.html">
+    <meta property="og:title" content="1st Year Notes">
+    <meta property="og:description" content="Access study notes for Applied Physics and Matrices.">
+    <meta property="og:url" content="https://24h51a66f4.github.io/cmrnotix/first-year-notes.html">
     <meta property="og:image" content="path/to/image.png">
 </head>
 <body>
@@ -18,7 +18,7 @@
         <h1>Free Student Notes</h1>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="roadmap.html">Learning Roadmap</a></li>
                 <li><button id="theme-toggle">Toggle Theme</button></li>
@@ -27,20 +27,25 @@
     </header>
     <section class="hero">
         <div class="container">
-            <h2>Welcome to Free Student Notes</h2>
-            <p>Access study notes for Applied Physics, Matrices, and Calculus.</p>
+            <h2>1st Year Notes</h2>
+            <p>Access study notes for Applied Physics and Matrices.</p>
         </div>
     </section>
     <section class="container">
-        <h2>Select Your Academic Year</h2>
-        <div class="year-selector">
-            <button class="year-btn" data-year="1">1st Year</button>
-            <button class="year-btn" data-year="2">2nd Year</button>
-            <button class="year-btn" data-year="3">3rd Year</button>
-            <button class="year-btn" data-year="4">4th Year</button>
-        </div>
-        <div id="year-content" class="year-content">
-            <!-- Content will be generated here -->
+        <h2>1st Year Subjects</h2>
+        <div class="subject-cards">
+            <div class="card">
+                <h3>Applied Physics</h3>
+                <a href="applied-physics.html" class="btn">View Notes</a>
+            </div>
+            <div class="card">
+                <h3>Matrices</h3>
+                <a href="matrices.html" class="btn">View Notes</a>
+            </div>
+            <div class="card">
+                <h3>Calculus</h3>
+                <a href="calculus.html" class="btn">View Notes</a>
+            </div>
         </div>
     </section>
     <footer>

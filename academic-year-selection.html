@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Student Notes</title>
+    <title>Select Academic Year</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
-    <meta property="og:title" content="Free Student Notes">
-    <meta property="og:description" content="Access study notes for Applied Physics, Matrices, and Calculus.">
-    <meta property="og:url" content="https://24h51a66f4.github.io/cmrnotix/index.html">
+    <meta property="og:title" content="Select Academic Year">
+    <meta property="og:description" content="Choose your academic year to view the relevant study notes.">
+    <meta property="og:url" content="https://24h51a66f4.github.io/cmrnotix/academic-year-selection.html">
     <meta property="og:image" content="path/to/image.png">
 </head>
 <body>
@@ -18,7 +18,8 @@
         <h1>Free Student Notes</h1>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academic-year-selection.html" class="active">Select Academic Year</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="roadmap.html">Learning Roadmap</a></li>
                 <li><button id="theme-toggle">Toggle Theme</button></li>
@@ -27,19 +28,18 @@
     </header>
     <section class="hero">
         <div class="container">
-            <h2>Welcome to Free Student Notes</h2>
-            <p>Access study notes for Applied Physics, Matrices, and Calculus.</p>
+            <h2>Select Your Academic Year</h2>
+            <p>Choose your academic year to view the relevant study notes.</p>
         </div>
     </section>
     <section class="container">
-        <h2>Select Your Academic Year</h2>
         <div class="year-selector">
             <button class="year-btn" data-year="1">1st Year</button>
             <button class="year-btn" data-year="2">2nd Year</button>
             <button class="year-btn" data-year="3">3rd Year</button>
             <button class="year-btn" data-year="4">4th Year</button>
         </div>
-        <div id="year-content" class="year-content">
+        <div id="content-container" class="content-container">
             <!-- Content will be generated here -->
         </div>
     </section>
