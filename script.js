@@ -258,3 +258,48 @@ streamSelect.addEventListener('change', function() {
 
     roadmapContainer.innerHTML = roadmapHTML;
 });
+
+// Generate Content Based on Academic Year Selection
+const yearButtons = document.querySelectorAll('.year-btn');
+const yearContent = document.getElementById('year-content');
+
+yearButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const selectedYear = this.getAttribute('data-year');
+        let contentHTML = '';
+
+        switch (selectedYear) {
+            case '1':
+                contentHTML = `
+                    <h3>1st Year Subjects</h3>
+                    <div class="subject-cards">
+                        <div class="card">
+                            <h3>Applied Physics</h3>
+                            <a href="applied-physics.html" class="btn">View Notes</a>
+                        </div>
+                        <div class="card">
+                            <h3>Matrices</h3>
+                            <a href="matrices.html" class="btn">View Notes</a>
+                        </div>
+                        <div class="card">
+                            <h3>Calculus</h3>
+                            <a href="calculus.html" class="btn">View Notes</a>
+                        </div>
+                    </div>
+                `;
+                break;
+            case '2':
+            case '3':
+            case '4':
+                contentHTML = `
+                    <h3>Notes for ${selectedYear} Year</h3>
+                    <p>Notes for this academic year will be available soon.</p>
+                `;
+                break;
+            default:
+                contentHTML = '';
+                break;
+        }
+        yearContent.innerHTML = contentHTML;
+    });
+});
