@@ -22,19 +22,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Real-Time Search for Notes
-document.getElementById('search-input').addEventListener('input', function() {
-    const filter = this.value.toLowerCase();
-    const noteItems = document.querySelectorAll('.note-item');
-    noteItems.forEach(item => {
-        const title = item.getAttribute('data-title').toLowerCase();
-        if (title.includes(filter)) {
-            item.style.display = '';
-        } else {
-            item.style.display = 'none';
-        }
+// Real-Time Search for Notes (only if the element exists)
+const searchInput = document.getElementById('search-input');
+if (searchInput) {
+    searchInput.addEventListener('input', function() {
+        const filter = this.value.toLowerCase();
+        const noteItems = document.querySelectorAll('.note-item');
+        noteItems.forEach(item => {
+            const title = item.getAttribute('data-title').toLowerCase();
+            if (title.includes(filter)) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
+            }
+        });
     });
-});
+}
 
 // Expandable Notes Preview
 document.querySelectorAll('.preview-btn').forEach(button => {
