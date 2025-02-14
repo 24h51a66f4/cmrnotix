@@ -1,0 +1,53 @@
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .sticky-header {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .nav-menu a {
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .nav-menu a:hover,
+  body.dark-mode .nav-menu a.active {
+    color: #bb86fc;
+  }
+  
+  body.dark-mode .hero-section {
+    background: linear-gradient(135deg, #bb86fc, #3700b3);
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .cta-btn {
+    background-color: #bb86fc;
+    color: #121212;
+  }
+  
+  body.dark-mode .cta-btn:hover {
+    background-color: #3700b3;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .subject-card {
+    background-color: #1e1e1e;
+    border-color: #333;
+  }
+  
+  body.dark-mode .download-btn {
+    background-color: #bb86fc;
+    color: #121212;
+  }
+  
+  body.dark-mode .download-btn:hover {
+    background-color: #3700b3;
+  }
+  
+  body.dark-mode .site-footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }

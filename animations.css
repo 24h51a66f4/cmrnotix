@@ -1,0 +1,54 @@
+/* Animations and Hover Effects */
+
+/* Fade-in Animation for Page Load */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  body {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Button Hover Effects */
+  .cta-btn:hover,
+  .download-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Card Hover Effects */
+  .subject-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Smooth Transition for All Elements */
+  button,
+  a,
+  .subject-card {
+    transition: all 0.3s ease;
+  }
+  
+  /* Loading Spinner (Optional) */
+  .loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007BFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
