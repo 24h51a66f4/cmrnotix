@@ -300,6 +300,7 @@ yearButtons.forEach(button => {
                 contentHTML = '';
                 break;
         }
+
         yearContent.innerHTML = contentHTML;
     });
 });

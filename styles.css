@@ -392,40 +392,40 @@ body.dark-mode nav ul li a.active {
     transform: scale(1.05);
 }
 /* Content Container */
-.content-container {
+.year-content {
     margin-top: 40px;
 }
-.content-container h3 {
+.year-content h3 {
     font-size: 24px;
     margin-bottom: 20px;
 }
-.content-container p {
+.year-content p {
     margin-bottom: 20px;
 }
-.content-container .subject-cards {
+.year-content .subject-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
-.content-container .card {
+.year-content .card {
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
     transition: transform 0.3s;
 }
-.content-container .card:hover {
+.year-content .card:hover {
     transform: translateY(-10px);
 }
-.content-container .card h3 {
+.year-content .card h3 {
     font-size: 20px;
     margin-bottom: 10px;
 }
-.content-container .card .btn {
+.year-content .card .btn {
     background-color: var(--secondary-color);
 }
-.content-container .card .btn:hover {
+.year-content .card .btn:hover {
     background-color: darken(var(--secondary-color), 10%);
 }
 /* Google Form Container */
