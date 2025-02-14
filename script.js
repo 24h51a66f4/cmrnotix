@@ -258,7 +258,6 @@ streamSelect.addEventListener('change', function() {
 
     roadmapContainer.innerHTML = roadmapHTML;
 });
-
 // Generate Content Based on Academic Year Selection
 const yearButtons = document.querySelectorAll('.year-btn');
 const yearContent = document.getElementById('year-content');
