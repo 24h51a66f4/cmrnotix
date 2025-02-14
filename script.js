@@ -88,27 +88,170 @@ function openPreviewModal(pdfUrl) {
     });
 }
 
-// Loading Animation (Placeholder for demonstration)
-window.addEventListener('load', () => {
-    const loadingIndicator = document.querySelector('.loading-indicator');
-    if (loadingIndicator) {
-        loadingIndicator.style.display = 'none';
+// Generate Roadmap Based on Stream Selection
+const streamSelect = document.getElementById('stream-select');
+const roadmapContainer = document.getElementById('roadmap-container');
+
+streamSelect.addEventListener('change', function() {
+    const selectedStream = this.value;
+    let roadmapHTML = '';
+
+    switch (selectedStream) {
+        case 'cse-core':
+            roadmapHTML = `
+                <h3>CSE Core Roadmap</h3>
+                <p><strong>Core Subjects:</strong></p>
+                <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Computer Organization and Architecture</li>
+                    <li>Operating Systems</li>
+                    <li>Database Management Systems</li>
+                    <li>Computer Networks</li>
+                    <li>Software Engineering</li>
+                    <li>Theory of Computation</li>
+                    <li>Compiler Design</li>
+                    <li>Computer Graphics</li>
+                    <li>Discrete Mathematics</li>
+                </ul>
+                <p><strong>Programming Languages & Libraries:</strong></p>
+                <ul>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>HTML/CSS/JavaScript</li>
+                </ul>
+                <p><strong>Additional Skills:</strong></p>
+                <ul>
+                    <li>Version Control (Git)</li>
+                    <li>Agile Methodologies</li>
+                    <li>Basic Linux Commands</li>
+                </ul>
+                <p><strong>Job Opportunities:</strong></p>
+                <ul>
+                    <li>Software Developer</li>
+                    <li>System Analyst</li>
+                    <li>Network Administrator</li>
+                    <li>Database Administrator</li>
+                </ul>
+                <p><strong>Salary Ranges:</strong></p>
+                <ul>
+                    <li>Software Developer: ₹4,00,000 - ₹10,00,000</li>
+                    <li>System Analyst: ₹4,00,000 - ₹8,00,000</li>
+                    <li>Network Administrator: ₹3,50,000 - ₹7,00,000</li>
+                    <li>Database Administrator: ₹4,00,000 - ₹9,00,000</li>
+                </ul>
+            `;
+            break;
+        case 'cse-ai-ml':
+            roadmapHTML = `
+                <h3>CSE AI/ML Roadmap</h3>
+                <p><strong>Core Subjects:</strong></p>
+                <ul>
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                    <li>Natural Language Processing</li>
+                    <li>Computer Vision</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Probability and Statistics</li>
+                    <li>Linear Algebra</li>
+                    <li>Calculus</li>
+                    <li>Discrete Mathematics</li>
+                </ul>
+                <p><strong>Programming Languages & Libraries:</strong></p>
+                <ul>
+                    <li>Python</li>
+                    <li>R</li>
+                    <li>TensorFlow</li>
+                    <li>Keras</li>
+                    <li>PyTorch</li>
+                    <li>Scikit-learn</li>
+                </ul>
+                <p><strong>Additional Skills:</strong></p>
+                <ul>
+                    <li>Version Control (Git)</li>
+                    <li>Big Data Technologies (Hadoop, Spark)</li>
+                    <li>Cloud Computing (AWS, GCP)</li>
+                    <li>Mathematical Modeling</li>
+                </ul>
+                <p><strong>Job Opportunities:</strong></p>
+                <ul>
+                    <li>Machine Learning Engineer</li>
+                    <li>Data Scientist</li>
+                    <li>AI Research Scientist</li>
+                    <li>Deep Learning Engineer</li>
+                    <li>NLP Engineer</li>
+                    <li>Computer Vision Engineer</li>
+                </ul>
+                <p><strong>Salary Ranges:</strong></p>
+                <ul>
+                    <li>Machine Learning Engineer: ₹5,00,000 - ₹15,00,000</li>
+                    <li>Data Scientist: ₹5,00,000 - ₹12,00,000</li>
+                    <li>AI Research Scientist: ₹7,00,000 - ₹20,00,000</li>
+                    <li>Deep Learning Engineer: ₹6,00,000 - ₹14,00,000</li>
+                    <li>NLP Engineer: ₹6,00,000 - ₹13,00,000</li>
+                    <li>Computer Vision Engineer: ₹6,00,000 - ₹13,00,000</li>
+                </ul>
+            `;
+            break;
+        case 'cse-data-science':
+            roadmapHTML = `
+                <h3>CSE Data Science Roadmap</h3>
+                <p><strong>Core Subjects:</strong></p>
+                <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Probability and Statistics</li>
+                    <li>Linear Algebra</li>
+                    <li>Calculus</li>
+                    <li>Data Mining</li>
+                    <li>Data Warehousing</li>
+                    <li>Big Data Technologies</li>
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                    <li>Discrete Mathematics</li>
+                </ul>
+                <p><strong>Programming Languages & Libraries:</strong></p>
+                <ul>
+                    <li>Python</li>
+                    <li>R</li>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Matplotlib</li>
+                    <li>Scikit-learn</li>
+                    <li>TensorFlow</li>
+                    <li>Keras</li>
+                    <li>PyTorch</li>
+                </ul>
+                <p><strong>Additional Skills:</strong></p>
+                <ul>
+                    <li>Version Control (Git)</li>
+                    <li>Cloud Computing (AWS, GCP)</li>
+                    <li>Data Visualization Tools (Tableau, Power BI)</li>
+                    <li>Mathematical Modeling</li>
+                </ul>
+                <p><strong>Job Opportunities:</strong></p>
+                <ul>
+                    <li>Data Scientist</li>
+                    <li>Data Analyst</li>
+                    <li>Machine Learning Engineer</li>
+                    <li>Big Data Engineer</li>
+                    <li>Data Engineer</li>
+                    <li>Business Intelligence Analyst</li>
+                </ul>
+                <p><strong>Salary Ranges:</strong></p>
+                <ul>
+                    <li>Data Scientist: ₹5,00,000 - ₹12,00,000</li>
+                    <li>Data Analyst: ₹4,00,000 - ₹9,00,000</li>
+                    <li>Machine Learning Engineer: ₹6,00,000 - ₹14,00,000</li>
+                    <li>Big Data Engineer: ₹5,50,000 - ₹11,00,000</li>
+                    <li>Data Engineer: ₹5,00,000 - ₹10,00,000</li>
+                    <li>Business Intelligence Analyst: ₹4,50,000 - ₹9,00,000</li>
+                </ul>
+            `;
+            break;
+        default:
+            roadmapHTML = '';
+            break;
     }
+
+    roadmapContainer.innerHTML = roadmapHTML;
 });
-
-// Open Graph Tags for Social Sharing
-function setMetaTags(title, description, url, image) {
-    document.title = title;
-    document.querySelector('meta[property="og:title"]').setAttribute('content', title);
-    document.querySelector('meta[property="og:description"]').setAttribute('content', description);
-    document.querySelector('meta[property="og:url"]').setAttribute('content', url);
-    document.querySelector('meta[property="og:image"]').setAttribute('content', image);
-}
-
-// Example usage (add these to the head of each HTML file)
-/*
-<meta property="og:title" content="Free Student Notes">
-<meta property="og:description" content="Access study notes for Applied Physics, Matrices, and Calculus.">
-<meta property="og:url" content="https://24h51a66f4.github.io/free-student-notes-website/">
-<meta property="og:image" content="path/to/image.png">
-*/

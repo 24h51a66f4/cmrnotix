@@ -365,16 +365,29 @@ body.dark-mode nav ul li a.active {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-/* Google Form Container */
-.google-form-container {
-    margin-top: 40px;
+/* Stream Selection Dropdown */
+.stream-select {
     width: 100%;
-    max-width: 640px;
-    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
-.google-form-container iframe {
-    width: 100%;
-    height: 954px;
-    border: none;
-    margin-top: 20px;
+/* Roadmap Container */
+.roadmap-container {
+    margin-top: 40px;
+}
+.roadmap-container h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.roadmap-container p {
+    margin-bottom: 10px;
+}
+.roadmap-container ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.roadmap-container li {
+    margin-bottom: 10px;
 }
