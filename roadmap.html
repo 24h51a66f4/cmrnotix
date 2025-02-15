@@ -3,53 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Roadmap</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/d2234e57e5.js" crossorigin="anonymous"></script>
-    <script defer src="script.js"></script>
-    <meta property="og:title" content="Learning Roadmap">
-    <meta property="og:description" content="Generate a comprehensive learning roadmap for your chosen academic stream.">
-    <meta property="og:url" content="https://24h51a66f4.github.io/cmrnotix/roadmap.html">
-    <meta property="og:image" content="path/to/image.png">
+    <title>Learning Roadmaps - cmrnotix</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="stylesgemcode.css">
 </head>
 <body>
-    <header>
-        <h1>Free Student Notes</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Subjects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="roadmap.html" class="active">Learning Roadmap</a></li>
-                <li><button id="theme-toggle">Toggle Theme</button></li>
+
+    <header class="sticky-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="indexgemcode.html"><h1>cmrnotix</h1></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="indexgemcode.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="roadmapgemcode.html" class="nav-link active">Roadmaps</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contactgemcode.html" class="nav-link">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <section class="hero">
-        <div class="container">
-            <h2>Learning Roadmap</h2>
-            <p>Select your academic stream to generate a comprehensive learning roadmap.</p>
-        </div>
-    </section>
-    <section class="container">
-        <h2>Select Your Academic Stream</h2>
-        <select id="stream-select" class="stream-select">
-            <option value="">Select a Stream</option>
-            <option value="cse-core">CSE Core</option>
-            <option value="cse-ai-ml">CSE AI/ML</option>
-            <option value="cse-data-science">CSE Data Science</option>
-            <!-- Add more streams as needed -->
-        </select>
-        <div id="roadmap-container" class="roadmap-container">
-            <!-- Roadmap will be generated here -->
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Free Student Notes</p>
-            <a href="mailto:varagantirahulgoud@gmail.com" class="email-btn">Contact Us</a>
-        </div>
+
+    <main class="container">
+        <section class="roadmap-selection">
+            <h2>Explore Learning Roadmaps</h2>
+            <p>Select an academic stream to view its learning roadmap:</p>
+
+            <div class="stream-selector">
+                <label for="stream-dropdown" class="stream-label">Select Stream:</label>
+                <select id="stream-dropdown" class="stream-dropdown">
+                    <option value="">-- Select a Stream --</option>
+                    <option value="cse-core">CSE Core</option>
+                    <option value="cse-aiml">CSE AI/ML</option>
+                    <option value="cse-datascience">CSE Data Science</option>
+                    </select>
+            </div>
+        </section>
+
+        <section id="roadmap-content" class="roadmap-content">
+            <div id="roadmap-placeholder">
+                <p>Select an academic stream from the dropdown to view its learning roadmap.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 cmrnotix. All rights reserved.</p>
     </footer>
+
+    <script src="scriptgemcode.js"></script>
 </body>
 </html>

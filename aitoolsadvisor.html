@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tool Advisor - cmrnotix</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="stylesgemcode.css">
+</head>
+<body>
+
+    <header class="sticky-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="indexgemcode.html"><h1>cmrnotix</h1></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active">AI</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="aitoolsadvisorgemcode.html" class="dropdown-item active">AI Tool Advisor</a></li>
+                        <li><a href="aipromptassistancegemcode.html" class="dropdown-item">AI Prompt Engineering Assistance</a></li>
+                        <li><a href="aiethicsgemcode.html" class="dropdown-item">AI Ethics & Bias Awareness</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="indexgemcode.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="internshipsgemcode.html" class="nav-link">Internships</a>
+                </li>
+                <li class="nav-item">
+                    <a href="eventsgemcode.html" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="roadmapgemcode.html" class="nav-link">Roadmaps</a>
+                </li>
+                <li class="nav-item">
+                    <a href="studentemailbenefitsgemcode.html" class="nav-link">Student Email Benefits</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contactgemcode.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="ai-tool-advisor-hero">
+            <h2>AI Tool Advisor</h2>
+            <p class="hero-subtitle">Find the perfect AI tools to boost your B.Tech CSE studies. Answer a few questions and get personalized recommendations!</p>
+            <a href="#domain-catalogs-section" class="advisor-button hero-button">Explore Domain Catalogs</a>  </section>
+
+        <section class="ai-tool-questionnaire-section">
+            <h3>Tell us about your needs</h3>
+            <p>Complete the questionnaire to receive tailored AI tool suggestions based on your study habits and requirements.</p>
+            <form id="ai-tool-advisor-form">
+                <div class="question-group">
+                    <label for="study-goal">What is your primary study goal?</label>
+                    <select id="study-goal" name="study-goal">
+                        <option value="">Select Goal</option>
+                        <option value="understand-concepts">Understanding Concepts</option>
+                        <option value="improve-writing">Improving Writing</option>
+                        <option value="coding-assistance">Coding Assistance</option>
+                        <option value="research-support">Research Support</option>
+                        <option value="efficiency-productivity">Efficiency & Productivity</option>
+                    </select>
+                </div>
+
+                <div class="question-group">
+                    <label for="preferred-learning-style">What's your preferred learning style?</label>
+                    <select id="preferred-learning-style" name="preferred-learning-style">
+                        <option value="">Select Style</option>
+                        <option value="visual">Visual (diagrams, videos)</option>
+                        <option value="auditory">Auditory (lectures, discussions)</option>
+                        <option value="reading-writing">Reading/Writing (textbooks, articles)</option>
+                        <option value="kinesthetic">Kinesthetic (hands-on, experiments)</option>
+                    </select>
+                </div>
+
+                <div class="question-group">
+                    <label for="familiarity-ai-tools">How familiar are you with AI tools?</label>
+                    <select id="familiarity-ai-tools" name="familiarity-ai-tools">
+                        <option value="">Select Familiarity Level</option>
+                        <option value="beginner">Beginner (Little to no experience)</option>
+                        <option value="intermediate">Intermediate (Some experience)</option>
+                        <option value="advanced">Advanced (Comfortable using AI tools)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="advisor-button">Get Recommendations</button>
+            </form>
+            <div id="recommendation-results" class="recommendation-area">
+                <p id="recommendation-placeholder">Your AI tool recommendations will appear here.</p>
+                <ul id="ai-tool-list" class="ai-tool-recommendation-list">
+                    </ul>
+            </div>
+        </section>
+
+        <section class="tool-comparison-section">
+            <h2>Compare AI Tools</h2>
+            <p class="comparison-intro">Compare features of different AI tools side-by-side to make an informed decision. Select tools to compare:</p>
+
+            <div class="tool-select-area">
+                <div class="tool-select-group">
+                    <label for="tool1-select">Select Tool 1:</label>
+                    <select id="tool1-select" name="tool1-select">
+                        <option value="">Choose Tool 1</option>
+                        <option value="chatgpt">ChatGPT</option>
+                        <option value="bard">Bard</option>
+                        <option value="copilot">GitHub Copilot</option>
+                        <option value="claude">Claude</option>
+                        <option value="writesonic">Writesonic</option>
+                        <option value="jasper">Jasper</option>
+                        <option value="rytr">Rytr</option>
+                        <option value="simplifiedaiwriter">Simplified AI Writer</option>
+                        <option value="inkforall">INK</option>
+                        <option value="neuroflash">Neuroflash</option>
+                    </select>
+                </div>
+
+                <div class="tool-select-group">
+                    <label for="tool2-select">Select Tool 2:</label>
+                    <select id="tool2-select" name="tool2-select">
+                        <option value="">Choose Tool 2</option>
+                        <option value="chatgpt">ChatGPT</option>
+                        <option value="bard">Bard</bard>
+                        <option value="copilot">GitHub Copilot</option>
+                        <option value="claude">Claude</option>
+                        <option value="writesonic">Writesonic</option>
+                        <option value="jasper">Jasper</option>
+                        <option value="rytr">Rytr</option>
+                        <option value="simplifiedaiwriter">Simplified AI Writer</option>
+                        <option value="inkforall">INK</option>
+                        <option value="neuroflash">Neuroflash</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="compare-button" class="advisor-button">Compare Tools</button>
+
+            <div id="comparison-table-container" class="comparison-table-area">
+                <p id="comparison-placeholder">Select two tools and click "Compare Tools" to see a feature comparison.</p>
+                <table id="ai-tool-comparison-table" class="ai-tool-table">
+                    </table>
+            </div>
+        </section>
+
+        <section class="domain-catalogs-section" id="domain-catalogs-section">
+            <h2>Domain-Specific AI Tool Catalogs</h2>
+            <p class="domain-catalogs-intro">Explore AI tools organized by domain to quickly find the best resources for your specific field of study. Browse catalogs for Coding, Writing, Data Analysis, and more.</p>
+
+            <section class="domain-catalog">
+                <h3>Coding AI Tools</h3>
+                <p>Catalogs of AI tools specifically designed to assist with coding, software development, and programming tasks.</p>
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <h4>GitHub Copilot</h4>
+                        <p>AI pair programmer that suggests code completions and entire lines in real-time.</p>
+                        <a href="https://github.com/features/copilot" class="tool-link" target="_blank">Learn More</a>
+                    </div>
+                    <div class="tool-card">
+                        <h4>DeepCode</h4>
+                        <p>AI-powered platform that reviews code and suggests improvements for efficiency and bug prevention.</p>
+                        <a href="https://www.deepcode.ai/" class="tool-link" target="_blank">Learn More</a>
+                    </div>
+                    <div class="tool-card">
+                        <h4>TensorFlow</h4>
+                        <p>Open-source machine learning framework for building and training ML models in Python and JavaScript.</p>
+                        <a href="https://www.tensorflow.org/" class="tool-link" target="_blank">Learn More</a>
+                    </div>
+                    <div class="tool-card">
+                        <h4>PyTorch</h4>
+                        <p>Open-source machine learning framework, popular for research and deep learning applications, known for its flexibility.</p>
+                        <a href="https://pytorch.org/" class="tool-link" target="_blank">Learn More</a>
+                    </div>
+                    </div>
+            </section>
+
+            <section class="domain-catalog">
+                <h3>Writing AI Tools</h3>
+                <p>Explore AI tools that can assist with writing, content generation, grammar checking, and creative writing.</p>
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <h4>ChatGPT</h4>
+                        <p>Versatile AI language model for conversations, text generation, summarization, and creative content.</p>
+                        <a href="https://openai.com/chatgpt" class="tool-link" target="_blank">Learn More</a>
+                    </div>
+                    <div class="tool-card">
+                        <h4>Claude</h4>
+                        <p>Powerful AI assistant for various writing tasks, known for its long-context handling and nuanced text generation.</p>
+                        <a href="https://www.anthropic.com/claude" class="tool-link" target="_blank">Learn More</a>
+                    </div>
+                    <div class="tool-card">
+                        <h4>Chatsonic</h4>
+                        <p>AI chatbot designed for content creation, marketing copy, and engaging conversational experiences.</p>
+                        <a href="https://writesonic.com/chatsonic/" class="tool-link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="domain-catalog">
+                <h3>Data Analysis AI Tools</h3>
+                <p>Discover AI-driven tools for data analysis, visualization, machine learning automation, and predictive analytics.</p>
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <h4>RapidMiner</h4>
+                        <p>Platform for data science with a visual workflow designer, offering data prep, machine learning, and model deployment.</p>
+                        <a href="https://rapidminer.com/" class="tool-link" target="_blank">Learn More</a>
+                    </div>
+                    <div class="tool-card">
+                        <h4>Tableau</h4>
+                        <p>Powerful data visualization and business intelligence tool for exploring and presenting data insights.</p>
+                        <a href="https://www.tableau.com/" class="tool-link" target="_blank">Learn More</a>
+                    </div>
+                    <div class="tool-card">
+                        <h4>DataRobot</h4>
+                        <p>Automated machine learning platform that helps build and deploy predictive models quickly and efficiently.</p>
+                        <a href="https://www.datarobot.com/" class="tool-link" target="_blank">Learn More</a>
+                    </div>
+                    <div class="tool-card">
+                        <h4>H2O.ai</h4>
+                        <p>Open-source machine learning platform designed for fast and scalable model building and deployment in enterprise environments.</p>
+                        <a href="https://h2o.ai/" class="tool-link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 cmrnotix. All rights reserved.</p>
+    </footer>
+
+    <script src="scriptgemcode.js"></script>
+</body>
+</html>
