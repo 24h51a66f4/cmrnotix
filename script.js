@@ -1311,3 +1311,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 });
+// VERY BASIC Theme Toggle Functionality - FOR TESTING DEFAULT LIGHT MODE
+const themeToggleBtn = document.getElementById('theme-toggle');
+const bodyElement = document.body;
+const toggleIcon = document.querySelector('.toggle-icon');
+const toggleText = document.querySelector('.toggle-text');
+
+bodyElement.classList.remove('dark-mode'); // FORCE Light Mode on initial load
+toggleIcon.textContent = '🌙';
+toggleText.textContent = 'Dark Mode';
+
+
+themeToggleBtn.addEventListener('click', function() {
+    bodyElement.classList.toggle('dark-mode');
+
+    if (bodyElement.classList.contains('dark-mode')) {
+        toggleIcon.textContent = '☀️';
+        toggleText.textContent = 'Light Mode';
+    } else {
+        toggleIcon.textContent = '🌙';
+        toggleText.textContent = 'Dark Mode';
+    }
+});

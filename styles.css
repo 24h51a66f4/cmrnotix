@@ -3229,3 +3229,320 @@ body.dark-mode .domain-catalog {
 
     /* .tool-grid and .tool-card responsive styles are already defined in previous steps */
 }
+/* ---------------------------------------- */
+/*      22. Light Mode Styles               */
+/* ---------------------------------------- */
+
+body {
+    background-color: #fff; /* Light mode default background (white) */
+    color: #333; /* Light mode default text color (dark grey) */
+}
+
+.logo a h1 {
+    color: #2c3e50; /* Dark logo text in light mode */
+}
+
+.navbar {
+    background-color: #f8f9fa; /* Light navbar background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Very subtle shadow for light navbar */
+}
+
+.nav-link {
+    color: #555; /* Darker nav links in light mode */
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #2c3e50; /* Darker hover/active link color */
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa; /* Light dropdown background */
+    border: 1px solid #eee; /* Light border for dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for dropdown */
+}
+
+.dropdown-item {
+    color: #555; /* Darker dropdown item text */
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+    background-color: #eee; /* Lighter hover/active dropdown item background */
+    color: #2c3e50; /* Darker hover/active dropdown item text */
+}
+
+.site-footer {
+    background-color: #f0f0f0; /* Light footer background */
+    color: #777; /* Darker footer text */
+}
+
+/* Sections - Light Mode Backgrounds - Adjust these to your section classes */
+.ai-tool-advisor-hero,
+.ai-tool-questionnaire-section,
+.tool-comparison-section,
+.domain-catalogs-section,
+.ai-ethics-section,
+.ethics-resources-section,
+.bias-detection-section,
+.ethical-guidelines-section,
+.ai-prompt-assistance-hero,
+.prompt-builder-section,
+.prompt-templates-section,
+.student-email-benefits-hero,
+.student-email-benefits-section,
+.internship-hero-section,
+.internship-listings-section,
+.events-hero-section,
+.event-listings-section,
+.roadmap-hero-section,
+.roadmap-content-section,
+.contact-hero-section,
+.contact-form-section,
+.home-hero-section,
+.home-featured-section,
+.home-benefits-section {
+    background-color: #fff; /* White background for content sections in light mode */
+}
+
+/* Specific elements - adjust as needed based on your design */
+h2, h3, h4, label, p, li, th, td, .advisor-button, .prompt-button, .resource-link, .toggle-text {
+    color: #333; /* Darker text for headings, paragraphs, buttons etc. */
+}
+
+/* Form elements in light mode (adjust colors as needed) */
+select, textarea, input[type="text"], input[type="email"], input[type="tel"] {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+}
+
+select:focus, textarea:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    border-color: #00bfa5; /* Focus color */
+    box-shadow: 0 0 5px rgba(0, 191, 165, 0.3); /* Focus shadow */
+}
+
+/* Remove dark mode specific backgrounds/borders where light mode should be white/light */
+.recommendation-area,
+.comparison-table-area,
+.bias-results-area,
+.prompt-results-area,
+.ai-tool-recommendation-list li,
+.ethics-resource-list li,
+.ethical-guideline-list li {
+    background-color: #fff; /* White background for results/lists in light mode */
+    border-color: #ddd; /* Light border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03); /* Very subtle shadow */
+}
+
+/* Adjust button backgrounds and text colors for light mode as needed */
+.advisor-button, .prompt-button, .resource-link {
+    background-color: #00bfa5; /* Teal button background */
+    color: #fff; /* White button text */
+}
+
+.advisor-button:hover, .prompt-button:hover, .resource-link:hover {
+    background-color: #008d7a; /* Darker teal on hover */
+}
+/* ---------------------------------------- */
+/*      21. Theme Toggle Button Styles      */
+/* ---------------------------------------- */
+.theme-toggle-button {
+    background: none;
+    border: none;
+    color: #eee; /* Default text color for button (light - for dark mode) */
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    transition: color 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+    color: #fff; /* Slightly brighter on hover */
+}
+
+.toggle-icon {
+    font-size: 1.2rem; /* Adjust icon size */
+}
+
+
+/* ---------------------------------------- */
+/*      22. Light Mode Styles               */
+/* ---------------------------------------- */
+
+body {
+    background-color: #fff; /* Light mode default background (white) */
+    color: #333; /* Light mode default text color (dark grey) */
+}
+
+.logo a h1 {
+    color: #2c3e50; /* Dark logo text in light mode */
+}
+
+.navbar {
+    background-color: #f8f9fa; /* Light navbar background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Very subtle shadow for light navbar */
+}
+
+.nav-link {
+    color: #555; /* Darker nav links in light mode */
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #2c3e50; /* Darker hover/active link color */
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa; /* Light dropdown background */
+    border: 1px solid #eee; /* Light border for dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for dropdown */
+}
+
+.dropdown-item {
+    color: #555; /* Darker dropdown item text */
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+    background-color: #eee; /* Lighter hover/active dropdown item background */
+    color: #2c3e50; /* Darker hover/active dropdown item text */
+}
+
+.site-footer {
+    background-color: #f0f0f0; /* Light footer background */
+    color: #777; /* Darker footer text */
+}
+
+/* Sections - Light Mode Backgrounds - Adjust these to your section classes */
+.ai-tool-advisor-hero,
+.ai-tool-questionnaire-section,
+.tool-comparison-section,
+.domain-catalogs-section,
+.ai-ethics-section,
+.ethics-resources-section,
+.bias-detection-section,
+.ethical-guidelines-section,
+.ai-prompt-assistance-hero,
+.prompt-builder-section,
+.prompt-templates-section,
+.student-email-benefits-hero,
+.student-email-benefits-section,
+.internship-hero-section,
+.internship-listings-section,
+.events-hero-section,
+.event-listings-section,
+.roadmap-hero-section,
+.roadmap-content-section,
+.contact-hero-section,
+.contact-form-section,
+.home-hero-section,
+.home-featured-section,
+.home-benefits-section {
+    background-color: #fff; /* White background for content sections in light mode */
+}
+
+/* Specific elements - adjust as needed based on your design */
+h2, h3, h4, label, p, li, th, td, .advisor-button, .prompt-button, .resource-link, .toggle-text {
+    color: #333; /* Darker text for headings, paragraphs, buttons etc. */
+}
+
+/* Form elements in light mode (adjust colors as needed) */
+select, textarea, input[type="text"], input[type="email"], input[type="tel"] {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+}
+
+select:focus, textarea:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    border-color: #00bfa5; /* Focus color */
+    box-shadow: 0 0 5px rgba(0, 191, 165, 0.3); /* Focus shadow */
+}
+
+/* Remove dark mode specific backgrounds/borders where light mode should be white/light */
+.recommendation-area,
+.comparison-table-area,
+.bias-results-area,
+.prompt-results-area,
+.ai-tool-recommendation-list li,
+.ethics-resource-list li,
+.ethical-guideline-list li {
+    background-color: #fff; /* White background for results/lists in light mode */
+    border-color: #ddd; /* Light border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03); /* Very subtle shadow */
+}
+
+/* Adjust button backgrounds and text colors for light mode as needed */
+.advisor-button, .prompt-button, .resource-link {
+    background-color: #00bfa5; /* Teal button background */
+    color: #fff; /* White button text */
+}
+
+.advisor-button:hover, .prompt-button:hover, .resource-link:hover {
+    background-color: #008d7a; /* Darker teal on hover */
+}
+/* Dark Mode Overrides */
+body.dark-mode {
+    background-color: #121212; /* Dark mode background */
+    color: #eee; /* Light text in dark mode */
+}
+
+body.dark-mode .logo a h1 {
+    color: #00bfa5; /* Teal logo text in dark mode */
+}
+
+body.dark-mode .navbar {
+    background-color: #212121; /* Darker navbar background */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05); /* Subtle white shadow for dark navbar */
+}
+
+body.dark-mode .nav-link {
+    color: #eee; /* Light nav links in dark mode */
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active {
+    color: #fff; /* White hover/active link color in dark mode */
+}
+
+body.dark-mode .dropdown-menu {
+    background-color: #333; /* Dark dropdown background */
+    border: 1px solid #555; /* Darker border for dropdown */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05); /* Subtle white shadow for dropdown */
+}
+
+body.dark-mode .dropdown-item {
+    color: #eee; /* Light dropdown item text */
+}
+
+body.dark-mode .dropdown-item:hover,
+body.dark-mode .dropdown-item.active {
+    background-color: #555; /* Darker hover/active dropdown item background */
+    color: #fff; /* White hover/active dropdown item text */
+}
+
+body.dark-mode .site-footer {
+    background-color: #333; /* Dark footer background */
+    color: #ccc; /* Lighter footer text */
+}
+
+body.dark-mode .theme-toggle-button {
+    color: #ccc; /* Lighter toggle button text in dark mode */
+}
+
+body.dark-mode .theme-toggle-button:hover {
+    color: #fff; /* White toggle button hover text in dark mode */
+}
+
+body.dark-mode .recommendation-area, body.dark-mode .comparison-table-area, body.dark-mode .bias-results-area, body.dark-mode .prompt-results-area {
+    background-color: #333; /* Dark background for result areas in dark mode */
+    border-color: #555; /* Darker border for result areas in dark mode */
+}
+
+body.dark-mode .ai-tool-recommendation-list li, body.dark-mode .ethics-resource-list li, body.dark-mode .ethical-guideline-list li {
+    background-color: #333; /* Dark background for list items in dark mode */
+    border-color: #555; /* Darker border for list items in dark mode */
+}
